@@ -64,3 +64,33 @@ Unlike the previous simple HTML example, this time the .jstree() function accept
 
 For now it is important to note that jstree will try to parse any data you specify in the core.data key and use it to create a tree. As seen in the previous example, if this key is missing jstree will try to parse the inline HTML of the container.
 
+# Populating the tree using AJAX
+
+Building off of the previous example, let's see how to have jstree make AJAX requests for you.
+
+                  <div id="container"></div>
+                  <script>
+                  $(function() {
+                    $('#container').jstree({
+                      'core' : {
+                        'data' : {
+                          "url" : "//www.jstree.com/fiddle/",
+                          "dataType" : "json" // needed only if you do not supply JSON headers
+                        }
+                      }
+                    });
+                  });
+                  </script>
+
+                  The server response is:
+
+                  [{
+                    "id":1,"text":"Root node","children":[
+                      {"id":2,"text":"Child node 1"},
+                      {"id":3,"text":"Child node 2"}
+                    ]
+                  }]
+
+jsTree will hit that URL, and provided you return properly formatted JSON it will be displayed.
+
+<a href="http://jsfiddle.net/vakata/2kwkh2uL/4481/">Demo in Fiddle</a>
