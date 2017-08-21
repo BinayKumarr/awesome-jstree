@@ -36,7 +36,7 @@ Now we are all set to create a tree, inline HTML is the easiest option (suitable
             });
             </script>
 
-<a href="https://jsfiddle.net/binaynayak/5rm8pa8b/1/">Demo in Fiddle</a>
+<a href="https://jsfiddle.net/bnkumar58/gLth3o77/">Demo in Fiddle</a>
 
 # Populating a tree using an array (or JSON)
 
