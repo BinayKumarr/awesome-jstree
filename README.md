@@ -8,36 +8,32 @@ jsTree functions properly in either box-model (content-box or border-box), can b
 How to Start jstree,what are external links needs to be add.
 # To get started you need 3 things in your page:
 
-    jQuery (anything above 1.9.1 will work)
-    A jstree theme (there is only one theme supplied by default)
-    The jstree source file
+         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/jstree.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/jstree.min.js"></script>
 
 # Populating a tree using HTML
 
 Now we are all set to create a tree, inline HTML is the easiest option (suitable for menus). All you need to do is select a node (using a jQuery selector) and invoke the .jstree() function to let jstree know you want to render a tree inside the selected node. $.jstree.create(element) can be used too.
 
-<div id="container">
-  <ul>
-    <li>ESSPL
-      <ul>
-        <li>Bhubaneswar</li>
-        <li>Canada</li>
-        <li>Kolkata</li>
-      </ul>
-    </li>
-  </ul>
-</div>
+        <div id="container">
+          <ul>
+            <li>ESSPL
+              <ul>
+                <li>Bhubaneswar</li>
+                <li>Canada</li>
+                <li>Kolkata</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-<script>
-$(function() {
-  $('#container').jstree();
-});
-</script>
+            <script>
+            $(function() {
+              $('#container').jstree();
+            });
+            </script>
 
 <a href="https://jsfiddle.net/binaynayak/5rm8pa8b/1/">Demo in Fiddle</a>
