@@ -37,3 +37,25 @@ Now we are all set to create a tree, inline HTML is the easiest option (suitable
             </script>
 
 <a href="https://jsfiddle.net/binaynayak/5rm8pa8b/1/">Demo in Fiddle</a>
+
+# Populating a tree using an array (or JSON)
+
+ Building trees from HTML is easy, but it is not very flexible, inline JS data is a better option:
+
+                      <div id="container"></div>
+                      $('#container').jstree({
+                      'core' : {
+                          'data' : [
+                              { "text" : "ESSPL", "children" : [
+                                  { "text" : "Bhubaneswar" },
+                                  { "text" : "Canada" },
+                                  { "text" : "Kolkata" }
+                              ]
+                              },
+                          ]
+                      }
+                  });
+
+
+
+<a href="https://jsfiddle.net/bnkumar58/ck30jt7z/">Demo in Fiddle</a>
