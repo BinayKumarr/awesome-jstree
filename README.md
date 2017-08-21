@@ -59,3 +59,8 @@ Now we are all set to create a tree, inline HTML is the easiest option (suitable
 
 
 <a href="https://jsfiddle.net/bnkumar58/ck30jt7z/">Demo in Fiddle</a>
+
+Unlike the previous simple HTML example, this time the .jstree() function accepts a config object.
+
+For now it is important to note that jstree will try to parse any data you specify in the core.data key and use it to create a tree. As seen in the previous example, if this key is missing jstree will try to parse the inline HTML of the container.
+
